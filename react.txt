@@ -1,0 +1,50 @@
+React - a Javascript library for building user interfaces 
+-most popular javascript library for building user interfaces
+-offers various extensions for entire application architectural support, such as Flux, React Native, etc.
+
+Why React?
+-makes it easier to create dynamic web apps -- requires less coding and offers more functionality 
+-uses virtual DOM --> web apps become faster
+    -virtual DOM = react's lightweight version of the real DOM 
+    -virtual DOM compares the components previous states and updates only the items in the real DOM that were changed
+    -**DOM treats an HTML document as a tree structure, where each node is an object representing a part of the document 
+    -when the state of an object changes in React, VDOM gets updated --> then compares its previous state and updates only those objects in the real DOM instead of updating each object 
+-reusable components
+    -components are the building blocks of React applications
+    -a single app will consist of multiple components 
+    -these components can be reused throughout --> can reduce app's development time 
+-unidirectional dataflow
+    -developers often nest child components within parent components --> becomes easier to debug errors since data flows in one direction, easier to find where a problem occurs 
+-can be used in development of both mobile and web apps 
+    -react native used for mobile apps 
+-dedicated tools for debugging
+
+Architecture
+-software architecture is the organization of a system, including all components, how they interact with each other, the environment in which they operate, and the principles used to design the software
+    -this can also include the evolution of the software into the future
+-Model view Controller architecture (MVC) = React is the "view" responsible for how the app looks/feels
+    -model relates all data-related logic
+    -view is used for the UI logic of the app
+    -controller is an interface between the model and view 
+
+Extensions
+-React goes beyond UI framework, as it contains many extensions that cover the entire application artchitecture
+
+Components
+-component - building blocks that comprise a React application, representing a piece of the user interface
+-when building apps with react, you are building independent, resusable components --> compose them to build complex UIs
+    -reusability - a component used in one area can be reused in another area - speeds up dev
+    -nested components - a component can contain several other component
+    -render method - a component must define a render method, which specifies how the component renders to the DOM --> responsible for describing what the UI should look like 
+    -passing properties - a component can also receive properties, passed in by its parent to specift values
+-every react has at least ONE component = root component 
+    -use root component represents thery edu internal application and contains other child components 
+        --essentially a tree of components 
+
+-a component is typically implemented as a javascript class that has a state and render method
+    -the state = the data that we want to display when the component is rendered
+    -render method = responsiible for describing what the UI should look like
+            -output = react element which is a simple JS object that maps the DOM element 
+
+-react will react to the state changes and update the DOM
+
